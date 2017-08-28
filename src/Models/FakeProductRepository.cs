@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace src.Models
 {
-    public class FakeProductRepositiory : IProductRepositiory
+    public class FakeProductRepositiory : IProductRepository
     {
         public IEnumerable<Product> Products => new List<Product>{
             new Product {Name = "Ball", Price = 21 },
