@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using src.Models;
 
-namespace SportsStore.Models 
+namespace store.Models 
 {
     public class ApplicationDbContext : DbContext 
     {
