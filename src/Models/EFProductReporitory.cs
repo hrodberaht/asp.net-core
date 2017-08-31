@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using SportsStore.Models;
+using store.Models;
 
 namespace src.Models
 {
