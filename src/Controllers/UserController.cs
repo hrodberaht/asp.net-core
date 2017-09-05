@@ -4,9 +4,9 @@ namespace src.Controllers
 {
     public class UserController : Controller
     {
-        public string Test()
+        public IActionResult Users()
         {
-            return "Test of User Controller";
+            return View();
         }
     }
 }
