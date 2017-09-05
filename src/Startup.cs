@@ -30,6 +30,9 @@ namespace store
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration["Data:SportStoreProducts:ConnectionString"]));
             services.AddTransient<IProductRepository, FakeProductRepositiory >();
+            services.AddTransient<IUserService, UserServices>();
+            services.AddTransient<IUserRepository, FakeUserRepository>();
+            
             services.AddMvc();
         }
 

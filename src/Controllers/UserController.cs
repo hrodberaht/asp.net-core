@@ -1,12 +1,21 @@
 using Microsoft.AspNetCore.Mvc;
+using src.Models;
 
 namespace src.Controllers
 {
     public class UserController : Controller
     {
-        public IActionResult Users()
+        private readonly IUserService _userService;
+
+        public UserController(IUserService userService)
         {
-            return View();
+            _userService = userService;
+        }
+        public string Users(string email)
+        {
+            
+            return _userService.Get(email).Name;
+            
         }
     }
 }

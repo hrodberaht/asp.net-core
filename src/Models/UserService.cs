@@ -4,7 +4,7 @@ namespace src.Models
     {
        private readonly IUserRepository _userRepository;
 
-       public UserServices(FakeUserRepository userRepository)
+       public UserServices(IUserRepository userRepository)
        {
            _userRepository = userRepository;
        }
@@ -14,7 +14,7 @@ namespace src.Models
             var user = _userRepository.GetUser(email);
 
             return new UserDto {
-                Email = user.Email
+                Name = user.Name
             };
         }
     }
