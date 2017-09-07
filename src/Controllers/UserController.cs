@@ -11,11 +11,10 @@ namespace src.Controllers
         {
             _userService = userService;
         }
-        public string Users(string email)
+        public IActionResult Users(string email)
         {
-            
-            return _userService.Get(email).Name;
-            
+            ViewData["Name"] = _userService.Get(email).Name;
+            return View();
         }
     }
 }
