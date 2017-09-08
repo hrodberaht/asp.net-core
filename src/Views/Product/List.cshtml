@@ -2,6 +2,5 @@
 
 @foreach (var p in Model)
 {
-    <h3>@p.Name</h3>
-    <h4>@p.Price.ToString("c")</h4>
+    <p>@p.Name @p.Price.ToString("c")</p><button>Click</button>
 }

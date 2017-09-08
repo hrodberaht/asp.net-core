@@ -14,7 +14,6 @@ namespace src.Models
             new Product {ProductID = 8, Name = "Mace", Price = 21 },
             new Product {ProductID = 7, Name = "Sword", Price = 27 },
             new Product {ProductID = 9, Name = "Gun", Price = 34 }
-
         };
     }
 
