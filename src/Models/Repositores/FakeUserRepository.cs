@@ -5,7 +5,7 @@ namespace src.Models
 {
     public class FakeUserRepository : IUserRepository
     {
-        public IEnumerable<User> Users =>new List<User>
+        public IEnumerable<User> Users => new List<User>
         {
             new User{Email = "jack@gmail.com", Name = "Jack"},
             new User{Email = "jon@gmail.com", Name = "Jon"},
